@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/about-us",
+        "destination": "/about.html"
+      }
+    ]
+  }
+  
