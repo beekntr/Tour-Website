@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /bat/
+Disallow: /.git/
+Sitemap: https://www.orbittrails.com/sitemap.xml

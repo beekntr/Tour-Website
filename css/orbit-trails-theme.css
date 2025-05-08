@@ -1,0 +1,168 @@
+/* Orbit Trails Custom Theme */
+:root {
+    /* Primary Colors */
+    --ot-primary: #E65C2E;    /* Warm Orange - represents Indian hospitality */
+    --ot-secondary: #1B4D89;  /* Royal Blue - professionalism and trust */
+    
+    /* Accent Colors */
+    --ot-accent-gold: #D4AF37;   /* Royal Gold - luxury service */
+    --ot-accent-green: #2E8B57;  /* Emerald - landscapes */
+    --ot-accent-red: #C41E3A;    /* Indian Red - culture */
+    
+    /* Neutral Colors */
+    --ot-text-dark: #1A1A1A;
+    --ot-text-light: #F5F5F5;
+    --ot-text-mid: #666666;
+    
+    /* Background Colors */
+    --ot-bg-light: #FFFFFF;
+    --ot-bg-off: #F8F9FA;
+    --ot-bg-accent: #FFF6E5;
+}
+
+/* Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--ot-text-dark);
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--ot-text-dark);
+}
+
+/* Navigation Styling */
+.rd-navbar-corporate {
+    background-color: var(--ot-bg-light);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rd-navbar-corporate .rd-navbar-nav > li > a {
+    font-weight: 500;
+    color: var(--ot-text-dark);
+    transition: color 0.3s ease;
+}
+
+.rd-navbar-corporate .rd-navbar-nav > li > a:hover {
+    color: var(--ot-primary);
+}
+
+/* Buttons */
+.button-primary {
+    background-color: var(--ot-primary);
+    color: var(--ot-text-light);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: var(--ot-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tour Package Cards */
+.box-categories {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: var(--ot-bg-light);
+}
+
+.box-categories:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box-categories-title {
+    color: var(--ot-text-dark);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* Hero Section */
+.swiper-slider-corporate .swiper-slide-caption {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+/* Testimonials */
+.quote-modern {
+    background: var(--ot-bg-off);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Form */
+.rd-form {
+    background: var(--ot-bg-light);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* Footer */
+.footer-corporate {
+    background: var(--ot-secondary);
+    color: var(--ot-text-light);
+    padding-top: 4rem;
+}
+
+/* Custom Classes for Tours */
+.tour-highlight {
+    background: var(--ot-bg-accent);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.tour-feature {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.tour-feature i {
+    color: var(--ot-primary);
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Animation Classes */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .rd-navbar-corporate {
+        background: var(--ot-bg-light);
+    }
+    
+    .swiper-slider-corporate .swiper-slide-caption {
+        padding: 1rem;
+    }
+    
+    .box-categories {
+        margin-bottom: 2rem;
+    }
+}
